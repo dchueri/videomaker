@@ -11,7 +11,7 @@ async function start() {
   robots.input()
   await robots.text()
   await robots.image()
-  //await robots.video()
+  await robots.video()
   //await robots.youtube()
 }
 
