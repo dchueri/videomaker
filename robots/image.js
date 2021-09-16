@@ -40,11 +40,15 @@ async function robot() {
       num: 2
     })
 
-    const imagesUrl = response.data.items.map((item) => {
-      console.log(item)
-      console.log(item.link)
-      return item.link
-    })
+    try {
+    var imagesUrl = response.data.items.map((item) => {
+        console.log(item)
+        console.log(item.link)
+        return item.link
+    }) } catch (e) {
+      console.log(e.name)
+      console.log(e.message)
+    }
 
     return imagesUrl
   }
